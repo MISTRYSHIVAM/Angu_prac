@@ -1,0 +1,16 @@
+.chessContainer {
+    border: 1px black solid;
+}
+.box {
+    height: 70px;
+    width: 70px;
+}
+.black {
+    background-color: black;
+}
+.white {
+    background-color: white;
+}
+table {
+    border-collapse: collapse;
+}

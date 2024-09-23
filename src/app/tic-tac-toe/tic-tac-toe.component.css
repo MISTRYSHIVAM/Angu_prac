@@ -1,0 +1,9 @@
+.btn {
+    font-size: 70px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    outline: none;
+    text-align: center;
+    color: black;
+}
