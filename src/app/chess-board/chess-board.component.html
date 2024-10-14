@@ -1,84 +1,37 @@
-<div class="chessContainer">
-    <table>
-        <tr>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-        </tr>
-        <tr>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-        </tr>
-        <tr>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-        </tr>
-        <tr>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-        </tr>
-        <tr>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-        </tr>
-        <tr>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-        </tr>
-        <tr>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-        </tr>
-        <tr>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-            <td class="box white"></td>
-            <td class="box black"></td>
-        </tr>
-    </table>
+<div class="miniChess">
+    <div class="chessRow" *ngFor="let i of [1, 2, 3, 4]; odd as isOdd">
+        <div *ngIf="isOdd">
+            <div>
+                <div
+                    class="miniBox"
+                    *ngFor="let j of [1, 2, 3, 4, 5, 6, 7, 8]; odd as o"
+                    [class.black]="o"
+                ></div>
+            </div>
+
+            <div>
+                <div
+                    class="miniBox"
+                    *ngFor="let j of [1, 2, 3, 4, 5, 6, 7, 8]; odd as o"
+                    [class.black]="!o"
+                ></div>
+            </div>
+        </div>
+        <div *ngIf="!isOdd">
+            <div>
+                <div
+                    class="miniBox"
+                    *ngFor="let j of [1, 2, 3, 4, 5, 6, 7, 8]; odd as o"
+                    [class.black]="o"
+                ></div>
+            </div>
+            <div>
+                <div
+                    class="miniBox"
+                    *ngFor="let j of [1, 2, 3, 4, 5, 6, 7, 8]; odd as o"
+                    [class.black]="!o"
+                ></div>
+            </div>
+        </div>
+    </div>
 </div>

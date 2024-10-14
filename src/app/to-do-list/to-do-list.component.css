@@ -1,0 +1,21 @@
+.toDoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.toDoBox * {
+    margin: 5px 0px;
+}
+.toDoBox input {
+    padding: 10px 20px;
+}
+.toDoBox p {
+    width: 300px;
+}
+.btn {
+    float: right;
+}
+.btn2 {
+    padding: 10px 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,8 @@
+<div class="toDoBox">
+    <input type="text" #input />
+    <button class="btn2" (click)="addToToDoList(input)">Add</button>
+    <p *ngFor="let todoes of toDoList; index as i">
+        {{ todoes }}
+        <button class="btn" (click)="removeFromToDoList(i)">❌</button>
+    </p>
+</div>

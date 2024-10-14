@@ -1,5 +1,24 @@
-<div>
-    <img src="rock.png" alt="stone" />
-    <img src="paper.png" alt="paper" />
-    <img src="scissors.png" alt="scissor" />
-</div>
+<img
+    src="rock.png"
+    class="img"
+    (click)="clickHandler('rock', userCh)"
+    alt="stone"
+/>
+<img
+    src="paper.png"
+    class="img"
+    (click)="clickHandler('paper', userCh)"
+    alt="paper"
+/>
+<img
+    src="scissors.png"
+    class="img"
+    (click)="clickHandler('scissor', userCh)"
+    alt="scissor"
+/>
+
+<h1 #userCh align="center">User :</h1>
+<h1 #computerCh align="center">Computer :</h1>
+<h1 #winner align="center">Winner</h1>
+
+<button (click)="getResult(computerCh, winner)" class="btn">Get result</button>

@@ -1,0 +1,14 @@
+.img {
+    border-radius: 50px;
+    margin: 10px;
+    width: 250px;
+}
+.img:active {
+    scale: 0.9;
+}
+.btn {
+    padding: 10px 20px;
+    outline: none;
+    margin-left: 350px;
+    font-weight: bold;
+}

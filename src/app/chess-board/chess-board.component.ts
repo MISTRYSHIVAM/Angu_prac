@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
     selector: 'app-chess-board',
     standalone: true,
-    imports: [],
+    imports: [CommonModule],
     templateUrl: './chess-board.component.html',
     styleUrl: './chess-board.component.css',
 })
